@@ -103,3 +103,20 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    
+    /* 1. Força o container principal a não vazar */
+    body, html, #container {
+        overflow-x: hidden; /* Corta o que sobrar para os lados */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 3. Ajusta imagens que podem estar empurrando a largura */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
